@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect(process.env.MONGODB_URI)
+mongoose.connect('mongodb+srv://mursid_notes:mursid786@cluster0.afrcf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 const db = mongoose.connection;
 
 //set up debugging
