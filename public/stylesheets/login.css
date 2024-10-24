@@ -94,3 +94,40 @@ input[type="submit"]:hover {
     background-color: #444;
 }
  
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    /* nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    } */
+
+    .container {
+        width: 90vw; /* Full width on mobile */
+        height: auto; /* Allow content to dictate height */
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    form {
+        width: 100%; /* Full width of container */
+    }
+
+    input {
+        padding: 12px; /* Slightly larger padding for easier interaction */
+    }
+
+    input[type="submit"] {
+        padding: 12px; /* Consistent padding for the submit button */
+    }
+
+    .main {
+        height: auto; /* Allow height to adjust for content */
+        padding: 20px; /* Add padding for better spacing */
+    }
+}
+

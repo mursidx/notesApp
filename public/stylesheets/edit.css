@@ -18,7 +18,6 @@ a{
     text-decoration: none;
 }
 
-
 nav{
     background-color: #1a1a1a;
     width: 100%;
@@ -103,3 +102,38 @@ nav{
     border: none;
     overflow: hidden;
 }
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    .main h1 {
+        margin-left: 2vh; /* Adjusted margin for mobile */
+        font-size: 1.5em; /* Responsive font size */
+    }
+
+    .notesContainer {
+        width: 90vw; /* Full width on mobile */
+        margin-left: 5vw; /* Center alignment */
+        padding: 15px; /* Increased padding for better spacing */
+    }
+
+    .singleNote {
+        min-width: 80vw; /* Allow more width on mobile */
+        max-width: 90vw; /* Full width on mobile */
+        margin: 10px 0; /* Increased margin for better separation */
+        padding: 15px; /* Adjusted padding for touch interaction */
+    }
+
+    .button,
+    .backBtn {
+        width: auto; /* Allow buttons to adjust width */
+        padding: 10px; /* Increased padding for touch targets */
+        font-size: 1em; /* Responsive font size */
+    }
+
+    .title {
+        min-width: 80vw; /* Allow more width on mobile */
+        max-width: 90vw; /* Full width on mobile */
+        margin: 10px 0; /* Increased margin for better separation */
+    }
+}
+

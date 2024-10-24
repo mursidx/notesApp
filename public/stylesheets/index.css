@@ -74,3 +74,30 @@ nav{
     color: rgb(183, 183, 183); 
     background-color: #3d3d3d;
 }
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    .main h1 {
+        margin-left: 2vh; /* Adjusted margin for mobile */
+        font-size: 1.5em; /* Responsive font size */
+    }
+
+    .notesContainer {
+        width: 90vw; /* Full width on mobile */
+        margin-left: 5vw; /* Center alignment */
+        padding: 15px; /* Increased padding for better spacing */
+    }
+
+    .singleNote {
+        min-width: 80vw; /* Allow more width on mobile */
+        max-width: 90vw; /* Full width on mobile */
+        margin: 10px 0; /* Increased margin for better separation */
+    }
+
+    .create {
+        width: auto; /* Allow button to adjust width */
+        padding: 10px; /* Increased padding for touch targets */
+        font-size: 1em; /* Responsive font size */
+    }
+}
+
