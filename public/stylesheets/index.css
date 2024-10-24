@@ -1,0 +1,76 @@
+/* menu styling */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #0b0b0b;
+    color: rgb(183, 183, 183);
+}
+a{
+    color: rgb(183, 183, 183);
+    text-decoration: none;
+}
+
+.title a:hover{
+    text-decoration: none;
+}
+nav{
+    background-color: #1a1a1a;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5vw;
+}
+.menu{
+    display: flex;
+    gap: 20px;
+}
+
+/* menu styling ends */
+.main h1{
+    margin-top: 3vh;
+    margin-left: 3vh;
+    text-transform: capitalize;
+}
+.notesContainer {
+    border-radius: 10px;
+    margin-top: 3vh;
+    margin-left: 3vh;
+    width: 30vw; /* This controls the available space for .singleNote */
+    min-height: 50vh;
+    background-color: #141414;
+    padding: 10px;
+}
+
+.singleNote {
+    display: inline-block; /* Allows the element to size itself based on content */
+    background-color: #232121;
+    min-width: 20vw; /* Minimum width */
+    max-width: 30vw; /* Maximum width */
+    height: auto; /* Height will adapt based on content */
+    padding: 10px; /* Optional: some padding for spacing */
+    color: rgb(183, 183, 183); /* Optional: text color for better readability */
+    word-wrap: break-word; /* Ensures long words break within the max-width */
+    border-radius: 10px;
+    margin: 5px 0px;
+}
+
+.create{
+    width: 20vh;
+    height: 5vh;
+    padding: 4px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin: 5px 0px;
+    color: rgb(183, 183, 183); 
+    background-color: #3d3d3d;
+}

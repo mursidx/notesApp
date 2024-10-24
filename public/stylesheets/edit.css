@@ -1,0 +1,105 @@
+/* menu styling */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'work sans';
+    width: 100%;
+    height: 100%;
+    background-color: #0b0b0b;
+    color: rgb(183, 183, 183);
+}
+a{
+    color: rgb(183, 183, 183);
+    text-decoration: none;
+}
+
+
+nav{
+    background-color: #1a1a1a;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5vw;
+}
+.menu{
+    display: flex;
+    gap: 20px;
+}
+
+.main h1{
+    margin-top: 3vh;
+    margin-left: 3vh;
+}
+.notesContainer {
+    border-radius: 10px;
+    margin-top: 3vh;
+    margin-left: 3vh;
+    width: 30vw; /* This controls the available space for .singleNote */
+    min-height: 50vh;
+    background-color: #141414;
+    padding: 10px;
+    overflow: hidden;
+}
+.singleNote {
+    display: inline-block; /* Allows the element to size itself based on content */
+    background-color: #232121;
+    min-width: 20vw; /* Minimum width */
+    max-width: 28vw; /* Maximum width */
+    min-height: 10vh;
+    max-height: 100vh;
+    padding: 10px; /* Optional: some padding for spacing */
+    color: rgb(183, 183, 183); /* Optional: text color for better readability */
+    word-wrap: wrap; /* Ensures long words break within the max-width */
+    border-radius: 10px;
+    margin: 5px 0px;
+    outline: none;
+    border: none;
+    overflow: hidden;
+}
+
+.button{
+    width: 20vh;
+    height: 5vh;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin: 5px 0px;
+    color: rgb(183, 183, 183); 
+}
+
+.backBtn{
+    width: 20vh;
+    height: 5vh;
+    padding: 8px 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin: 5px 0px;
+    color: rgb(183, 183, 183); 
+    
+}
+
+.title{
+    display: inline-block; /* Allows the element to size itself based on content */
+    background-color: #232121;
+    min-width: 20vw; /* Minimum width */
+    max-width: 28vw; /* Maximum width */
+    min-height: auto;
+    max-height: 100vh;
+    padding: 10px; /* Optional: some padding for spacing */
+    color: rgb(183, 183, 183); /* Optional: text color for better readability */
+    word-wrap: wrap; /* Ensures long words break within the max-width */
+    border-radius: 10px;
+    margin: 5px 0px;
+    outline: none;
+    border: none;
+    overflow: hidden;
+}

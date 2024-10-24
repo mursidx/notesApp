@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Diary</title>
+    <link rel="stylesheet" href="/stylesheets/edit.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="titlee">
+            <a href="/">My Diary</a>
+        </div>
+        <div class="menu">
+            <a href="/">Home</a>
+            <a href="/create">Create new</a>
+        </div>
+    </nav>
+
+    <div class="main">
+        <h1>Create Note</h1>
+        <div class="notesContainer">
+            <form action="/create" method="post">
+                <div style="display: flex; flex-direction: column;">
+                    <input type="text" name="title" class="title" placeholder="Title" required>
+                    <textarea required id="autoResize" style="resize: none;" class="singleNote" name="note" oninput="autoResizeTextarea(this)" placeholder="Note"></textarea>
+                    <div>
+                        <input style="background-color: #3d3d3d;" class="button" type="submit" value="create">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+    <script>
+        function autoResizeTextarea(textarea) {
+            textarea.style.height = 'auto'; // Reset the height
+            textarea.style.height = (textarea.scrollHeight) + 'px'; // Set height based on scrollHeight
+        }
+    
+        // Initialize the textarea with the right height based on the initial content
+        document.getElementById('autoResize').style.height = document.getElementById('autoResize').scrollHeight + 'px';
+    </script>
+    
+
+    </div>
+</body>
+
+</html>

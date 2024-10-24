@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Diary</title>
+    <link rel="stylesheet" href="/stylesheets/index.css">
+
+</head>
+<body>
+    <nav>
+        <div class="title">
+            <a href="/">My Diary</a>
+        </div>
+        <div class="menu">
+            <a href="/">Home</a>
+            <a href="/create">Create new</a>
+            <a href="/logout">Log out</a>
+        </div>
+    </nav>
+
+    <div class="main">
+        <h1>Welcome !<%= user.username %></h1>
+        
+        <div class="notesContainer" style="display: flex; flex-direction: column;">
+            <% if (notes.length > 0) { %>
+                <h4>All notes</h4>
+                <% notes.map((item, index) => { %>
+                    <div class="singleNote">
+                        <a href="/edit/<%= item.title %>"><%= item.title%></a>
+                    </div>
+                <% }) %>
+            <% } else { %>
+                <p style="margin-bottom: 10px;">No notes added</p>
+            <% } %>
+            <a class="create" href="/create">Create new</a>
+        </div>
+        
+        
+    </div>
+</body>
+</html>
