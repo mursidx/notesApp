@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb+srv://mursid_notes:mursid786@cluster0.afrcf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect('mongodb://localhost:27017/myNotesDB')
 const db = mongoose.connection;
 // mongoose.connect('mongodb://127.0.0.1:27017/notesAppDB')
 // const db = mongoose.connection;
